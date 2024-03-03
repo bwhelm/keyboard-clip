@@ -1,6 +1,6 @@
 $fn= $preview ? 32 : 64;  // render more accurately than preview
 thickness = 7.0;       // thickness in mm
-toothDepth = .1;       // thickness of tooth at front of slot
+toothDepth = .15;      // thickness of tooth at front of slot
 toothWidth = 1;        // thickness of front teeth
 stringHoleRadius = 2;  // radius of hole for string
 slotDepth = 1.9;       // depth of slot; PCB is 1.6mm
@@ -12,7 +12,7 @@ ridgeHeight = 0.5;     // height of ridge above and below
 
 width = stringHoleRadius * 4;           // width of clip
 length = slotLength + width + slotGap;  // total length
-ridgeWidth = width/3;                 // width of ridge on top and bottom
+ridgeWidth = width/3;                   // width of ridge on top and bottom
 
 difference(){
     union(){
@@ -67,8 +67,8 @@ difference(){
 
     }
 
-    // FIXME: This is only to correct for a PCB mistake on 2022-thumb
-    translate([1, -1, 0])                // taper one side
-        rotate([0, 0, -25])
-        cube([20, 10, thickness*2+2], center=true);
+    /* // FIXME: This is only to correct for a PCB mistake on 2022-thumb */
+    /* translate([1, -1, 0])                // taper one side */
+    /*     rotate([0, 0, -25]) */
+    /*     cube([20, 10, thickness*2+2], center=true); */
 }
