@@ -1,9 +1,9 @@
-$fn= $preview ? 32 : 64;  // render more accurately than preview
+$fn= $preview ? 32 : 128;  // render more accurately than preview
 thickness = 7.0;       // thickness in mm
 toothDepth = .15;      // thickness of tooth at front of slot
 toothWidth = 1;        // thickness of front teeth
 stringHoleRadius = 2;  // radius of hole for string
-slotDepth = 1.9;       // depth of slot; PCB is 1.6mm
+slotDepth = 1.7;       // depth of slot; PCB is 1.6mm
 slotLength = 14;       // length of slot
 slotGap = 0.5;         // gap between slot and string hole
 tipAngle = 9;          // angle of opening of slot
